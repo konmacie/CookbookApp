@@ -1,0 +1,57 @@
+@use "../variables" as vars;
+
+/* Padding left */
+.pl {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-left: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Padding right */
+.pr {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-right: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Padding top */
+.pt {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-top: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Padding bottom */
+.pb {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-bottom: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Padding X */
+.px {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-left: vars.$spacer-unit * $index !important;
+      padding-right: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Padding Y */
+.py {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      padding-top: vars.$spacer-unit * $index !important;
+      padding-bottom: vars.$spacer-unit * $index !important;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use "../variables" as vars;
+
+/* Margin left */
+.ml {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-left: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Margin right */
+.mr {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-right: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Margin top */
+.mt {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-top: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Margin bottom */
+.mb {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-bottom: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Margin X */
+.mx {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-left: vars.$spacer-unit * $index !important;
+      margin-right: vars.$spacer-unit * $index !important;
+    }
+  }
+}
+
+/* Margin Y */
+.my {
+  @for $index from 0 through 6 {
+    &-#{$index} {
+      margin-top: vars.$spacer-unit * $index !important;
+      margin-bottom: vars.$spacer-unit * $index !important;
+    }
+  }
+}

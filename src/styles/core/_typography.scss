@@ -1,0 +1,5 @@
+@use "../variables" as vars;
+
+:root {
+  font-family: vars.$font-family-text;
+}
